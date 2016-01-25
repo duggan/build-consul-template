@@ -12,6 +12,4 @@ dependencies:
 
 test:
   override:
-    - docker run duggan/consul-template -v "$PWD":/go/src/github.com/hashicorp/consul-template
-  post:
-    - cp bin/* $CIRCLE_ARTIFACTS
+    - docker run -v $CIRCLE_ARTIFACTS:/go/src/github.com/hashicorp/consul-template/bin -w /go/src/github.com/hashicorp/consul-template duggan/consul-template make dev
