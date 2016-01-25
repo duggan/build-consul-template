@@ -1,0 +1,17 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - docker build -t duggan/consul-template .
+    - mkdir -p ~/docker; docker save duggan/consul-template > ~/docker/image.tar
+
+test:
+  override:
+    - docker run duggan/consul-template -v "$PWD":/go/src/github.com/hashicorp/consul-template
+  post:
+    - cp bin/* $CIRCLE_ARTIFACTS
