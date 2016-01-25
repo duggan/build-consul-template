@@ -13,3 +13,5 @@ dependencies:
 test:
   override:
     - docker run -v $CIRCLE_ARTIFACTS:/go/src/github.com/hashicorp/consul-template/bin -w /go/src/github.com/hashicorp/consul-template duggan/consul-template make dev
+  post:
+    - zip $CIRCLE_ARTIFACTS/consul-template_$CONSUL_VERSION_linux_amd64.zip $CIRCLE_ARTIFACTS/consul-template
