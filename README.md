@@ -13,3 +13,9 @@ run it yourself locally.
 *Current builds*:
 
  - [consul-template_0.12.2_linux_amd64.zip](https://circle-artifacts.com/gh/duggan/build-consul-template/26/artifacts/0/tmp/circle-artifacts.eNv3KPD/consul-template_0.12.2_linux_amd64.zip) ([build history](https://circleci.com/gh/duggan/build-consul-template/26#artifacts))
+
+## DIY builds
+
+If you'd like to build locally, ensure you have a functional Docker
+install, clone this repo and run `make`. You should be left with a
+`consul-template` linux x64 binary in the `target` directory. Simple!
