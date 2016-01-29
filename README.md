@@ -12,4 +12,4 @@ run it yourself locally.
 
 *Current builds*:
 
- - [consul-template_0.12.2_linux_amd64.zip](https://circle-artifacts.com/gh/duggan/build-consul-template/12/artifacts/0/tmp/circle-artifacts.41kTfFz/consul-template_0.12.2_linux_amd64.zip) ([build history](https://circleci.com/gh/duggan/build-consul-template/12#artifacts))
+ - [consul-template_0.12.2_linux_amd64.zip](https://circle-artifacts.com/gh/duggan/build-consul-template/22/artifacts/0/tmp/circle-artifacts.9dWzYwn/consul-template_0.12.2_linux_amd64.zip) ([build history](https://circleci.com/gh/duggan/build-consul-template/22#artifacts))
