@@ -1,6 +1,6 @@
 # build-consul-template
 
-A build of consul-template against Go 1.6beta2 as a workaround for [Issue #442](https://github.com/hashicorp/consul-template/issues/442).
+A build of consul-template against Go 1.6rc1 as a workaround for [Issue #442](https://github.com/hashicorp/consul-template/issues/442).
 
 ## Builds
 
