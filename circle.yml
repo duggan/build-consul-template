@@ -17,4 +17,4 @@ test:
   override:
     - make build
   post:
-    - cd ${CIRCLE_ARTIFACTS}/target && zip consul-template_${VERSION}_linux_amd64.zip *
+    - cd target && zip ${CIRCLE_ARTIFACTS}/consul-template_${VERSION}_linux_amd64.zip *
