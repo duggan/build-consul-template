@@ -1,4 +1,5 @@
 WORKDIR=/go/src/github.com/hashicorp/consul-template/bin
+VERSION?=0.12.2
 
 all: image build
 
