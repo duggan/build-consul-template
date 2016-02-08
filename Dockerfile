@@ -1,4 +1,4 @@
-FROM golang:1.6rc1
+FROM golang:1.6
 
 ARG version=0.12.2
 
