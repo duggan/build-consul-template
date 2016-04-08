@@ -4,7 +4,7 @@ VERSION?=master
 all: image build
 
 image:
-	docker build -e version=$(VERSION) -t duggan/build-consul-template:$(VERSION) .
+	docker build --build-arg REF=$(VERSION) -t duggan/build-consul-template:$(VERSION) .
 build:
 	docker run -v $(PWD)/target:$(WORKDIR) duggan/build-consul-template:$(VERSION)
 
